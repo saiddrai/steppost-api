@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roadmaps",
+  "info": {
+    "singularName": "roadmap",
+    "pluralName": "roadmaps",
+    "displayName": "roadmap"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::paragraph.paragraph",
+      "mappedBy": "roadmap"
+    }
+  }
+}

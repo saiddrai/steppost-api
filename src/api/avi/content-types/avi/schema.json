@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avis",
+  "info": {
+    "singularName": "avi",
+    "pluralName": "avis",
+    "displayName": "avi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "stars": {
+      "type": "integer"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

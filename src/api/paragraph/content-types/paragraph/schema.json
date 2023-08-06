@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paragraphs",
+  "info": {
+    "singularName": "paragraph",
+    "pluralName": "paragraphs",
+    "displayName": "paragraph"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "roadmap": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::roadmap.roadmap",
+      "inversedBy": "paragraphs"
+    }
+  }
+}

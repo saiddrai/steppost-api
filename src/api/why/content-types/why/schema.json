@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whys",
+  "info": {
+    "singularName": "why",
+    "pluralName": "whys",
+    "displayName": "pourquoi choisir"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::paragraph.paragraph"
+    }
+  }
+}

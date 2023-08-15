@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
   admin: {
     path: "/admin",
     build: {
-      backend: env("ADMIN_BUILD_BACKEND", env("VITE_APP_API_URL")),
+      backend: env("ADMIN_BUILD_BACKEND", env("VITE_APP_URL")),
     },
   },
 });

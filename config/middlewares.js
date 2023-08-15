@@ -6,7 +6,7 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:", "*"],
+          "connect-src": ["'self'", "http:", "https:", "*"],
           "img-src": ["'self'", "data:", "blob:", "*"],
           "media-src": ["'self'", "data:", "blob:", "*"],
           upgradeInsecureRequests: null,
@@ -29,10 +29,5 @@ module.exports = [
   "strapi::body",
   "strapi::session",
   "strapi::favicon",
-  {
-    name: "strapi::public",
-    config: {
-      path: "./public", // Update with the correct path to your public directory
-    },
-  },
+  "strapi::public",
 ];

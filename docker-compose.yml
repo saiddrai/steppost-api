@@ -8,12 +8,12 @@ services:
       - sqlite-data:/app/data
     image: steppost-backend:3.0
 
-  frontend  :
-    build: ./steppost-front
-    ports:
-      - "3000:3000"
-    image: steppost-frontend:3.0
-    environment:
-      - VITE_APP_API_URL = http://lcoalhost:1337/api
+  # frontend  :
+  #   build: ./steppost-front
+  #   ports:
+  #     - "3000:3000"
+  #   image: steppost-frontend:3.0
+  #   environment:
+  #     - VITE_APP_API_URL = http://lcoalhost:1337/api
 volumes:
   sqlite-data:

@@ -4,18 +4,33 @@
   "info": {
     "singularName": "roadmap",
     "pluralName": "roadmaps",
-    "displayName": "roadmap"
+    "displayName": "roadmap",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "paragraphs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::paragraph.paragraph",
-      "mappedBy": "roadmap"
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

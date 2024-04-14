@@ -4,12 +4,17 @@
   "info": {
     "singularName": "why",
     "pluralName": "whys",
-    "displayName": "pourquoi choisir"
+    "displayName": "pourquoi choisir",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "paragraphs": {
       "type": "relation",

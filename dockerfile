@@ -1,5 +1,5 @@
 FROM node:16-alpine
-ENV NODE_ENV production
+ENV NODE_ENV development
 
 WORKDIR /app
 COPY package*.json ./
@@ -8,9 +8,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+# RUN npm run build
 
 
 EXPOSE 1337
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "develop"]

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "paragraphs",
+  "collectionName": "pourquois",
   "info": {
-    "singularName": "paragraph",
-    "pluralName": "paragraphs",
-    "displayName": "paragraph",
-    "description": ""
+    "singularName": "pourquoi",
+    "pluralName": "pourquois",
+    "displayName": "pourquoi"
   },
   "options": {
     "draftAndPublish": true
@@ -17,28 +16,20 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "description": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "subtitle": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "string"
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }
